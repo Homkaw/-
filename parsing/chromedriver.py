@@ -6,6 +6,7 @@ from selenium.webdriver.common.by import By
 
 service = Service(executable_path=ChromeDriverManager().install())
 driver = webdriver.Chrome(service=service)
+filter = "По времени"
 
 find = "Парсинг на python"
 urlpath= f'https://habr.com/ru/search/?q={find}&target_type=posts&order=relevance'
